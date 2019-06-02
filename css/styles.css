@@ -1,0 +1,42 @@
+/*Estilos comunes a todos elementos de la página*/
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.clearfix{
+    float: none;
+    clear: both;    /*Limpiar los flotados*/
+}
+
+/*Cuerpo de la página*/
+body{
+   background: url(../img/hojas.jpg);   /*Imágen fonde de página index.html. Ubicados en el directorio "css", debemos subir un directorio para acceder a la carpeta "img"*/
+   background-attachment: fixed;        /*La imágen de fondo estará siempre fija al hacer scroll*/
+}
+
+/*Dentro del cuerpo de la página, se sitúa la sección "global" que recoge toda la informacion. Se trata de un subconjunto de body*/
+#global{
+    width: 65%;                        
+    margin: 0px auto;
+    margin-top: 30px;
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 0px 2px gray;
+}
+
+#logo{
+    font-family: Verdana, Arial;    /*En caso de no existir la primera fuente, utilizará la segunda*/
+    font-size: 30px;
+    letter-spacing: 4px;
+    line-height: 75px;
+    background: rgb(11, 77, 40);
+    color: white;
+    text-align: center;
+    width: 385px;
+    height: 80px;
+    margin-bottom: 20px;
+    float: left;                    /*Se desplaza a la izquierda*/
+    
+}

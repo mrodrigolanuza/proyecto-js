@@ -21,7 +21,7 @@ body{
     width: 65%;                        
     margin: 0px auto;
     margin-top: 30px;
-    padding: 20px;
+    padding: 25px;
     background: white;
     box-shadow: 0px 0px 2px gray;
 }
@@ -115,7 +115,7 @@ body{
 .button-more{
     font-size: 14px;
     text-align: center;
-    display: block;
+    display: block;             /*Permite tratar el elemento como un bloque y no como una línea en el flujo HTML*/
     padding: 15px;
     background: rgb(11, 77, 40);
     color: white;
@@ -123,4 +123,33 @@ body{
     margin-top: 10px;
     width: 70px;
     margin-bottom: 20px;
+}
+
+#sidebar{
+    font-family: Helvetica, Arial;
+    width: 31%;
+    float:right;
+}
+
+#sidebar h4{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 10px;
+    color: #333;
+    background: url("../img/lines.png") repeat-x; /*Asociar una imagen patrón de fondo, que concatena de manera recurrente hasta completar el background*/
+}
+
+#sidebar h4 span{
+    background: white;
+    padding: 5px;
+}
+
+#sidebar img{
+    width: 100%;
+}
+
+#sidebar p{
+    font-size: 15px;
+    text-align: justify;
 }

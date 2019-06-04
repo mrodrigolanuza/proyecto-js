@@ -28,7 +28,7 @@ body{
 
 #logo{
     font-family: Verdana, Arial;    /*En caso de no existir la primera fuente, utilizará la segunda*/
-    font-size: 30px;
+    font-size: 28px;
     letter-spacing: 4px;
     line-height: 75px;
     background: rgb(11, 77, 40);
@@ -38,5 +38,41 @@ body{
     height: 80px;
     margin-bottom: 20px;
     float: left;                    /*Se desplaza a la izquierda*/
-    
+    text-transform: uppercase;      /*Forzar el texto en mayúsculas*/
+}
+
+/*Barra de navegación de opciones de menú*/
+#menu{
+    font-family: Helvetica, Arial;
+    background: #333;             /*Gris oscuro*/
+    width: 100%;
+    text-transform: uppercase;          
+    margin-bottom: 20px;
+}
+
+/*Lista de la barra de navegación -> Contenedor donde se ubican las opciones de la lista*/
+#menu ul{                       
+    line-height: 46px;
+    list-style: none;
+}
+
+/*Elementos contenidos en la lista -> Opciones de menú*/
+#menu ul li{
+    height: 46px;               /*Cada elemento de la lista es igual de alto que el contenedor de la lista completa, ya que se van a mostrar horizontalmente*/
+    display: inline-block;      /*Permite visualizar los elementos de la lista horizontalmente y no verticalmente*/
+    transition: all 300ms;      /*Realiza un efecto de transición entre las opciones del menú cuando se pase el ratón por encima (hover)*/
+}
+
+/*Evento hover de ratón al pasar por encima lde los elementos de la lista*/
+#menu ul li:hover{
+    background:  rgb(11, 77, 40);
+}
+
+/*Enlaces ubicados en las opcioens de menú*/
+#menu ul li a{
+    display: block;             
+    color: white;
+    text-decoration: none;      /*Eliminar subrayado por defecto típicos de los enlaces*/
+    padding-left: 30px;         /*Separación entre las opciones enlance y enlace*/
+    padding-right: 30px;
 }

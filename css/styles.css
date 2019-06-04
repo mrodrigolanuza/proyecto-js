@@ -153,3 +153,23 @@ body{
     font-size: 15px;
     text-align: justify;
 }
+
+form input[type="text"],
+form input[type="password"],
+form input[type="email"]{
+    padding: 5px;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    width: 80%;
+    margin-bottom: 10px;
+    display: block;
+    margin-top: 5px;
+}
+
+form input[type="submit"]{
+    background: #eee;
+    padding: 10px;
+    border: 1px solid gray;
+    color: #333;
+    cursor: pointer;
+}

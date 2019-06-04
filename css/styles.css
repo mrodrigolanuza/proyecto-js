@@ -70,9 +70,57 @@ body{
 
 /*Enlaces ubicados en las opcioens de menú*/
 #menu ul li a{
-    display: block;             
+    display: block;             /*Para que actúe como un bloque*/
     color: white;
     text-decoration: none;      /*Eliminar subrayado por defecto típicos de los enlaces*/
     padding-left: 30px;         /*Separación entre las opciones enlance y enlace*/
     padding-right: 30px;
+}
+
+/*Columna donde se publicarán los posts en vertical de manera consecutiva*/
+#posts{
+    width: 60%;                 /*La columna donde se ubican los posts, ocupará un porcentaje para dejar espacio a la sidebar a su derecha*/
+    float: left;
+    font-family: Helvetica, Arial;
+    
+}
+
+/*Elmento artículo*/
+.post{
+    padding: 7px;
+}
+
+/*Título h2 de elementos cuya clase es post*/
+.post h2{
+    font-size: 30px;
+    color: #333;
+}
+
+/*Fecha de un artítulo o post*/
+.post .date{
+    display: block;
+    color: gray;
+    margin-top: 5px;
+}
+
+/*Texto de un artículo o post*/
+.post p{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    line-height: 22px;
+    text-align: justify;        /*El texto se alinea en formato cuadrado*/
+}
+
+/*Elemento botón "Leer más"*/
+.button-more{
+    font-size: 14px;
+    text-align: center;
+    display: block;
+    padding: 15px;
+    background: rgb(11, 77, 40);
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+    width: 70px;
+    margin-bottom: 20px;
 }

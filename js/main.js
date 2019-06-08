@@ -58,4 +58,14 @@ $(document).ready(function(){
     $("#to-blue").click(function(){
         theme.attr("href", "css/blue.css");        
     });
+
+    //Scroll arriba desde el final de la página
+    $(".subir").click(function(e){
+        e.preventDefault();                     //Evitar que el link nos redirija a alguna otra página
+        
+        $('html, body').animate({               //Animación sobre los elementos html y body de la página
+            scrollTop: 0                        //Realizar un scroll al punto de arriba
+        }, 600);                                //Tiempo de la animación
+    });
+
 });

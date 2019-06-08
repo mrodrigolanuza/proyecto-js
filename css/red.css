@@ -1,0 +1,21 @@
+/*TEMA RED: se recogen todos los elementos de la página afectados por este color*/
+
+
+/*Cuerpo de la página*/
+body{
+    background: url(../img/rojo.jpg);    /*Imágen fonde de página index.html. Ubicados en el directorio "css", debemos subir un directorio para acceder a la carpeta "img"*/
+    background-attachment: fixed;        /*La imágen de fondo estará siempre fija al hacer scroll*/
+ }
+
+#logo{
+    background:#CA3413;
+}
+
+/*Evento hover de ratón al pasar por encima lde los elementos de la lista*/
+#menu ul li:hover{
+    background:  #CA3413;
+}
+
+.button-more{
+    background: #CA3413;
+}

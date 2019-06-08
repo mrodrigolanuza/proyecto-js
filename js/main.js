@@ -47,5 +47,15 @@ $(document).ready(function(){
         $("#posts").append(post);
     });
 
-    
+    //Botones de selección de tema
+    var theme = $("#tema-seleccionado");            //Variable que almacena la referencia al fichero de estilos en index.html
+    $("#to-green").click(function(){
+        theme.attr("href", "css/green.css");        //Al hacer click en el selector, cambiamos la referencia del fichero CSS en el atributo href. 
+    });
+    $("#to-red").click(function(){
+        theme.attr("href", "css/red.css");        
+    });
+    $("#to-blue").click(function(){
+        theme.attr("href", "css/blue.css");        
+    });
 });

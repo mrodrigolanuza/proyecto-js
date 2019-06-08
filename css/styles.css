@@ -10,11 +10,7 @@
     clear: both;    /*Limpiar los flotados*/
 }
 
-/*Cuerpo de la página*/
-body{
-   background: url(../img/hojas.jpg);   /*Imágen fonde de página index.html. Ubicados en el directorio "css", debemos subir un directorio para acceder a la carpeta "img"*/
-   background-attachment: fixed;        /*La imágen de fondo estará siempre fija al hacer scroll*/
-}
+
 
 /*Dentro del cuerpo de la página, se sitúa la sección "global" que recoge toda la informacion. Se trata de un subconjunto de body*/
 #global{
@@ -31,7 +27,6 @@ body{
     font-size: 28px;
     letter-spacing: 4px;
     line-height: 75px;
-    background: rgb(11, 77, 40);
     color: white;
     text-align: center;
     width: 385px;
@@ -63,10 +58,7 @@ body{
     transition: all 300ms;      /*Realiza un efecto de transición entre las opciones del menú cuando se pase el ratón por encima (hover)*/
 }
 
-/*Evento hover de ratón al pasar por encima lde los elementos de la lista*/
-#menu ul li:hover{
-    background:  rgb(11, 77, 40);
-}
+
 
 /*Enlaces ubicados en las opcioens de menú*/
 #menu ul li a{
@@ -117,7 +109,6 @@ body{
     text-align: center;
     display: block;             /*Permite tratar el elemento como un bloque y no como una línea en el flujo HTML*/
     padding: 15px;
-    background: rgb(11, 77, 40);
     color: white;
     text-decoration: none;
     margin-top: 10px;
@@ -189,4 +180,40 @@ footer{
 
 .bx-wrapper, .bx-viewport{
     height: 250px !important;
+}
+
+/*Caja donde se colocan los botones (divs) de cambio de tema*/
+#selector-theme{
+    position: fixed;        /*Posición fija en la página*/
+    top:40%;                /*A un 40% del top*/
+    background: rgba(51, 51, 51, 0.50);
+    width: 50px;
+    height: 100px;    
+}
+
+/*Estilos comunes de lo selectores de tema*/
+#to-green,
+#to-red,
+#to-blue{
+    width: 25px;
+    height: 25px;
+    border: 1px solid white;
+    display: block;
+    margin: 0px auto;           /*Se centran dentro del contenedor*/
+    margin-top: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+/*Estilo particular de cada selector de tema*/
+#to-green{
+    background: rgb(11, 77, 40);
+}
+
+#to-red{
+    background: #CA3413;
+}
+
+#to-blue{
+    background: #1F87C4;
 }

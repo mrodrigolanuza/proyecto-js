@@ -1,0 +1,24 @@
+/*TEMA GREEN: se recogen todos los elementos de la página afectados por este color*/
+
+
+/*Cuerpo de la página*/
+body{
+    background: url(../img/hojas.jpg);   /*Imágen fonde de página index.html. Ubicados en el directorio "css", debemos subir un directorio para acceder a la carpeta "img"*/
+    background-attachment: fixed;        /*La imágen de fondo estará siempre fija al hacer scroll*/
+ }
+
+#logo{
+    background: rgb(11, 77, 40);
+}
+
+/*Evento hover de ratón al pasar por encima lde los elementos de la lista*/
+#menu ul li:hover{
+    background:  rgb(11, 77, 40);
+}
+
+.button-more{
+    background: rgb(11, 77, 40);
+}
+
+
+

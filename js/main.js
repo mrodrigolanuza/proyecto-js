@@ -97,4 +97,12 @@ $(document).ready(function(){
         $("#acordeon").accordion();
     }
 
+    //Reloj de la página reloj. Configurar un timer para que actualice la hora cada segundo.
+    if(window.location.href.indexOf('reloj')>-1){    //Solamente si estamos en la página reloj.html (existe la palabra about en la URL)
+        setInterval(function(){
+            var reloj = moment().format("h:mm:ss");
+            $("#reloj").html(reloj);
+        },1000);
+    }
+
 });

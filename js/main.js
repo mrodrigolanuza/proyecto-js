@@ -105,4 +105,16 @@ $(document).ready(function(){
         },1000);
     }
 
+    //Formulario contacto.
+    if(window.location.href.indexOf('contact')>-1){    //Solamente si estamos en la página contact.html (existe la palabra contact en la URL)
+        // Realizar validación de los campos mediante el plugin jQuery Validator
+        $.validate({
+            lang: 'es',
+        });
+
+        //Formulario contacto: Asignar un datapicker al campo fecha
+        $("form input[name='date']").datepicker({      //Todos campos de formulario cuyo nombre sea 'date' va a tener un datepicker (en este caso solo será un solo campo)
+            dateFormat: 'dd-mm-yy'
+        });  
+    }
 });

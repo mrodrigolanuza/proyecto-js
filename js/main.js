@@ -68,4 +68,26 @@ $(document).ready(function(){
         }, 600);                                //Tiempo de la animación
     });
 
+    //Login simulado: Guardar nombre de usuario en LocalStorage al pulsar el botón enviar
+    $("#login form").submit(function(){
+        var form_name = $("#form_name").val();
+        localStorage.setItem("form_name", form_name);
+    });
+
+    //Login simulado: Extraer del LocalStorage la información de usuario validado previamente
+    var form_name = localStorage.getItem("form_name");
+    if(form_name!=null && form_name!="undefined"){
+        var about_parrafo = $("#about p");
+        $("#about p").html("<br><strong>Bienvenido, "+ form_name + "</strong> ");
+        $("#about p").append("<a href='#' id='logout'>Cerrar sesión</a>");
+        $("#login").hide();
+
+        $("#logout").click(function(){    //Si pulsamos en Cerrar Sesión, se elimina la variable de sesión del LocalStorge
+            localStorage.clear();
+            location.reload();            //Permite volver a cargar la página, para que tras limpiar la variable de sesión en LocalStorage, se muestre nuevamente el formulario.
+        });
+    }
+    
+    
+
 });

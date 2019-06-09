@@ -10,13 +10,12 @@
 
         <!--jQuery-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <!--Slider-->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-        <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-
-        <!-- Moment "Parse, validate, manipulate, and display dates"-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/es.js"></script>
+        <!-- Enlace a los estilos CSS, estructuras y temas de jQuery UI-->
+        <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.min.css"/>
+        <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.structure.min.css"/>
+        <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.theme.min.css"/>
+        <!-- Instalar jQuery-UI sobre jQuery-->
+        <script type="text/javascript" src="js/jquery-ui-1.12.1/jquery-ui.min.js"></script>  
         
         <!-- Mis Scripts -->
         <script type="text/javascript" src="js/main.js"></script>
@@ -45,19 +44,25 @@
                     </ul>
                 </nav>
             </header>
-            <!--Slider: Carrusel de imágenes que se van visualizando-->
-            <div id="slider">
-                <div class="galeria">
-                    <div><img src="img/hojas.jpg" title="Funky roots"></div>
-                    <div><img src="img/rojo.jpg" title="The long and winding road"></div>
-                    <div><img src="img/cielo.jpg" title="Happy trees"></div>
-                  </div>
-            </div>
             <!-- Sección de contenido contenido de la página web (artículos, sidebar)-->
             <section id="content">
-                <div id="posts">
-                    <!-- Cargar posts medianta array objetos JSON. Esta info podría venir de cualquier fuentes de datos (API REST..) -->
-                    <!-- Una opicón arternativa, es crear aquí una plantilla HTML, y desde JavaScript ralizar un clonado de dicha plantilla para cargar la info-->
+                <div id="box">
+                    <!-- Acordeón -->
+                    <h2>Sobre mí..</h2>
+                    <div id="acordeon">
+                        <h3>¿Quienes somos?</h3>
+                        <div>
+                            <p>Pestaña 1 acordeón</p>
+                        </div>
+                        <h3>¿Qué ofrecemos?</h3>
+                        <div>
+                            <p>Pestaña 2 acordeón</p>
+                        </div>
+                        <h3>¿Dónde estamos?</h3>
+                        <div>
+                            <p>Pestaña 3 acordeón</p>
+                        </div>
+                    </div>
                 </div>
                 <aside id="sidebar">
                     <div id="about">

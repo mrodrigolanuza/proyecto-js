@@ -82,8 +82,8 @@
     padding: 7px;
 }
 
-/*Título h2 de elementos cuya clase es post*/
-.post h2{
+/*Título h2 a todos elementos de la web*/
+h2{
     font-size: 30px;
     color: #333;
 }
@@ -225,3 +225,16 @@ footer{
     display: block;
     float: right;
 }
+
+/*Caja donde se ubica el acordeon de la página about*/
+#box{
+    width: 60%;
+    float: left;
+    margin-top: 40px;
+}
+
+/*Elemento acordeón*/
+#acordeon{
+    margin-top: 20px;
+}
+
